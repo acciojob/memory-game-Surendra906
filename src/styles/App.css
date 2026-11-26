@@ -1,1 +1,68 @@
 
+.game_wrapper {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 16px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.levels_container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.level_option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.game_stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.game_status {
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background-color: #e6f4ea;
+  color: #137333;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.cells_container {
+  display: grid;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.cell {
+  height: 70px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f0f4f8;
+  color: #1f2933;
+  cursor: pointer;
+}
+
+.cell.flipped {
+  background-color: #ffffff;
+  border-color: #2563eb;
+}
+
+.cell.matched {
+  background-color: #dcfce7;
+  border-color: #16a34a;
+  color: #166534;
+}
